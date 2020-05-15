@@ -10933,6 +10933,10 @@ a.text-dark:focus {
   }
 }
 
+body {
+  background: #fff;
+}
+
 ol,
 ul,
 dl {
@@ -10941,6 +10945,21 @@ dl {
   -webkit-margin-after: 0;
   margin-block-end: 0;
   margin-bottom: 0;
+}
+
+.user_info {
+  text-align: center;
+}
+
+.user_info h1 {
+  font-size: 1.6em;
+  letter-spacing: -1px;
+  margin-bottom: 3px;
+  margin-top: 15px;
+}
+
+.gravatar {
+  border-radius: 50%;
 }
 
 footer {

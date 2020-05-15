@@ -11,6 +11,7 @@
 <body>
 @include('layout._header')
 <div class="container mt-3">
+    @include('shared._message')
     @yield('content')
     @include('layout._footer')
 </div>

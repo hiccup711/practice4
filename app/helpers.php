@@ -21,4 +21,4 @@ function get_db_config()
             'password'  => env('DB_PASSWORD', ''),
         ];
     }
-} 
+}

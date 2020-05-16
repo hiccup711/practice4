@@ -10971,6 +10971,26 @@ dl {
   min-width: auto;
 }
 
+.stats a {
+  color: #555;
+  text-align: center;
+  border-left: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+.stats a strong {
+  display: block;
+  font-size: 1.4em;
+}
+
+.stats a:hover {
+  text-decoration: none;
+  color: #777;
+}
+
+.stats a:first-child {
+  border-left: none;
+}
+
 footer {
   border-top: solid 1px rgba(0, 0, 0, 0.1);
 }

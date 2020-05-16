@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -11,7 +10,7 @@ class SessionsController extends Controller
     public function __construct()
     {
         $this->middleware('guest',[
-            'guest' => ['create']
+            'only' => ['create']
         ]);
     }
 
@@ -35,7 +34,7 @@ class SessionsController extends Controller
             else{
                 Auth::logout();
                 session()->flash('warning', '您的账号还未激活，请查看您的邮箱激活账号');
-                return redirect()->route('login');
+                return redirect('login');
             }
         }else{
             return back()->withErrors('您的邮箱和密码不匹配')->withInput();
@@ -45,6 +44,6 @@ class SessionsController extends Controller
     {
         Auth::logout();
         session()->flash('success', '您的账号已退出');
-        return redirect()->route('home');
+        return redirect('login');
     }
 }

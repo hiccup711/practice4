@@ -1072,17 +1072,39 @@
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="264" parent="240" name="users_email_unique">
+    <column id="264" parent="240" name="is_admin">
+      <Position>9</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="265" parent="240" name="activation_token">
+      <Position>10</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="266" parent="240" name="activated">
+      <Position>11</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="267" parent="240" name="users_email_unique">
       <ColNames>email</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="265" parent="240" name="PRIMARY">
+    <index id="268" parent="240" name="users_activation_token_index">
+      <ColNames>activation_token</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="269" parent="240" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="266" parent="240" name="users_email_unique">
+    <key id="270" parent="240" name="users_email_unique">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>users_email_unique</UnderlyingIndexName>
     </key>

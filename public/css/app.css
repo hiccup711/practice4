@@ -10962,6 +10962,15 @@ dl {
   border-radius: 50%;
 }
 
+.gravatar_edit {
+  margin: 0 auto 25px;
+  text-align: center;
+}
+
+.user-dropdown-menu {
+  min-width: auto;
+}
+
 footer {
   border-top: solid 1px rgba(0, 0, 0, 0.1);
 }

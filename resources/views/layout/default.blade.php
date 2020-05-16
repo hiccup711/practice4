@@ -10,7 +10,7 @@
 </head>
 <body>
 @include('layout._header')
-<div class="container mt-3">
+<div class="container mt-4">
     @include('shared._message')
     @yield('content')
     @include('layout._footer')

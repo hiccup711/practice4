@@ -14,7 +14,7 @@ class AddActivationToUser extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->boolean('is_admin');
+            $table->boolean('is_admin')->default(false);
             $table->string('activation_token')->nullable()->index();
             $table->boolean('activated')->default(false);
         });

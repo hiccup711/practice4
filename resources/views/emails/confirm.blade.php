@@ -10,8 +10,8 @@
 <body>
 <h1>感谢您注册WeiboApp</h1>
 <p>请点击下方链接激活账号<br>
-    <a href="{{ $user->activation_token }}">
-        {{ $user->activation_token }}
+    <a href="{{ route('confirm_email', $user->activation_token) }}">
+        {{ route('confirm_email', $user->activation_token) }}
     </a></p>
 <p>如果这不是您本人操作，请忽略此邮件。</p>
 </body>

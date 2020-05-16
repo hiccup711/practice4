@@ -23,7 +23,7 @@
                         <label for="remember" class="form-check-label">记住我</label>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary">登录</button><a href="" class="ml-3">忘记密码？</a>
+                        <button type="submit" class="btn btn-primary">登录</button><a href="{{ route('password.request') }}" class="ml-3">忘记密码？</a>
                     </div>
                 </form>
                 <hr>

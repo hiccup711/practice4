@@ -5,6 +5,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SessionsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SessionsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_16_113512_add_activation_to_user.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/emails/confirm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/confirm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sessions/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sessions/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/static_pages/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/static_pages/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,12 +164,14 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../practice3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/auth/passwords" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Coding\Homestead\Code\practice4\resources\views\auth\passwords" />
+      <recent name="E:\Coding\Homestead\Code\practice4\resources\views\emails" />
       <recent name="E:\Coding\Homestead\Code\practice4\resources\views\static_pages" />
       <recent name="E:\Coding\Homestead\Code\practice4\resources\lang" />
     </key>
@@ -196,14 +205,18 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="76" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1589535192312" />
-    <state x="93" y="93" width="1350" height="648" key="DiffContextDialog" timestamp="1589590474269">
+    <state x="499" y="172" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1589613915329">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="93" y="93" width="1350" height="648" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1589590474269" />
-    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1589601291178">
+    <state x="499" y="172" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.834@0.0.1536.834" timestamp="1589613915329" />
+    <state x="93" y="93" width="1350" height="648" key="DiffContextDialog" timestamp="1589615387396">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1589601291178" />
+    <state x="93" y="93" width="1350" height="648" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1589615387396" />
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1589612235062">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1589612235062" />
     <state x="270" y="59" key="SettingsEditor" timestamp="1589536741073">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -220,13 +233,13 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="437" y="134" width="803" height="632" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1589552355745" />
-    <state x="425" y="189" key="run.anything.popup" timestamp="1589604240327">
+    <state x="425" y="189" key="run.anything.popup" timestamp="1589614829551">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1589604240327" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1589607968821">
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1589614829551" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1589616904993">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1589607968821" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1589616904993" />
   </component>
 </project>

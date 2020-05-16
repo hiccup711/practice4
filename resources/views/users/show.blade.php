@@ -5,6 +5,11 @@
         <section class="user_info">
             @include('shared._user_info')
         </section>
+        @can('follow', $user)
+        <section class="text-center mt-4">
+            @include('shared._follow')
+        </section>
+        @endcan
         <section class="stats row mt-4">
             @include('shared._stats')
         </section>

@@ -21,4 +21,10 @@ Route::delete('/logout', 'SessionsController@destroy')->name('logout');
 Route::post('/statuses', 'StatusesController@store')->name('statuses.store');
 Route::delete('/statuses/{status}', 'StatusesController@destroy')->name('statuses.destroy');
 
+// 关注人列表与粉丝列表
+Route::get('/users/{user}/followers', 'UsersController@followers')->name('users.followers');
+Route::get('/users/{user}/followings', 'UsersController@followings')->name('users.followings');
 
+// 关注与取关
+Route::post('/follow/{user}', 'FollowersController@store')->name('followers.store');
+Route::delete('/unfollow/{user}', 'FollowersController@destroy')->name('followers.destroy');

@@ -20,6 +20,15 @@
                     </div>
                     @endforeach
                 @endif
+            @else
+                @if(count($users) > 0)
+                    @foreach( $users as $user)
+                        <div class="list-group-item">
+                            <img src="{{ $user->gravatar(32) }}" alt="{{ $user->name }}" class="mr-3 gravatar">
+                            <a href="{{ route('users.show', $user) }}">{{ $user->name }}</a>
+                        </div>
+                    @endforeach
+                @endif
             @endif
         </div>
         <div class="mt-4">

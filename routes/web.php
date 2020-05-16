@@ -6,6 +6,8 @@ Route::get('/help', 'StaticPagesController@help')->name('help');
 
 // 用户URI
 Route::resource('/users', 'UsersController');
+// 用户激活
+Route::get('/users/confirm/{token}', 'UsersController@confirmEmail')->name('confirm_email');
 
 // 会话
 Route::get('/login', 'SessionsController@create')->name('login');

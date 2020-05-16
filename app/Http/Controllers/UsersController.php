@@ -4,12 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Support\Facades\Mail;
+
 class UsersController extends Controller
 {
     public function __construct()
     {
         $this->middleware('auth', [
-            'except' => ['create', 'store']
+            'except' => ['create', 'store', 'confirmEmail']
         ]);
     }
 
@@ -35,8 +37,9 @@ class UsersController extends Controller
         ]);
         $user['password'] = bcrypt($user['password']);
         $user = User::create($user);
+        $this->sendConfirmEmailTo($user);
         session()->flash('success', '注册成功，请查看您的邮箱来激活账号');
-        return route('users.show', compact('user'));
+        return route('login');
     }
     public function edit(User $user)
     {
@@ -65,4 +68,27 @@ class UsersController extends Controller
         session()->flash('info', $user->name .'已被删除');
         return redirect()->back();
     }
+    public function confirmEmail($token)
+    {
+        $user = User::where('activation_token', $token)->firstOrFail();
+        $user->activation_token = null;
+        $user->activated = true;
+        $user->save();
+        session()->falsh('success', '账户已激活，您将在这里开启一段新的旅程~');
+        Auth::login($user);
+        return view('users.show', [Auth::user()]);
+    }
+    protected function sendConfirmEmailTo($user)
+    {
+        $view = 'emails.confirm';
+        $data = compact('user');
+        $from = '43733717@qq.com';
+        $name = 'Ricky';
+        $to = $user->email;
+        $subject = '感谢您注册WeiboApp';
+        Mail::send($view, $data, function ($message) use ($from, $name, $to, $subject){
+            $message->from($from, $name)->to($to)->subject($subject);
+        });
+    }
+
 }

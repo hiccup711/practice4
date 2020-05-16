@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="987e540b-7217-4717-92ac-6be933ea427a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_16_113512_add_activation_to_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_16_113512_add_activation_to_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SessionsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SessionsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +184,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589534614281</updated>
       <workItem from="1589534616085" duration="16949000" />
-      <workItem from="1589584606455" duration="10478000" />
+      <workItem from="1589584606455" duration="12622000" />
     </task>
     <servers />
   </component>
@@ -222,9 +224,9 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1589604240327" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1589603822335">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1589607968821">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1589603822335" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1589607968821" />
   </component>
 </project>
